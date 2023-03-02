@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="G_barCConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="G_barCConnectionString (MySettings)" PropertyReference="ApplicationSettings.Code_barre.My.MySettings.GlobalReference.Default.G_barCConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="G_barCConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="G_barCConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.Code_barre.My.MySettings.GlobalReference.Default.G_barCConnectionString1" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StatTableAdapter" GeneratorDataComponentClassName="StatTableAdapter" Name="Stat" UserDataComponentName="StatTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="G_barCConnectionString (MySettings)" DbObjectName="Stat" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Stat.*
+FROM         Stat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Libelle" DataSetColumn="Libelle" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="Date_gen" DataSetColumn="Date_gen" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ArchiveTableAdapter" GeneratorDataComponentClassName="ArchiveTableAdapter" Name="Archive" UserDataComponentName="ArchiveTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="G_barCConnectionString1 (MySettings)" DbObjectName="Archive" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Archive.*
+FROM         Archive</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CPCOD" DataSetColumn="CPCOD" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Libelle" DataSetColumn="Libelle" />
+              <Mapping SourceColumn="Nbr_betail" DataSetColumn="Nbr_betail" />
+              <Mapping SourceColumn="Serie" DataSetColumn="Serie" />
+              <Mapping SourceColumn="Date_gen" DataSetColumn="Date_gen" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="Etat" DataSetColumn="Etat" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stat" msprop:Generator_UserTableName="Stat" msprop:Generator_RowDeletedName="StatRowDeleted" msprop:Generator_RowChangedName="StatRowChanged" msprop:Generator_RowClassName="StatRow" msprop:Generator_RowChangingName="StatRowChanging" msprop:Generator_RowEvArgName="StatRowChangeEvent" msprop:Generator_RowEvHandlerName="StatRowChangeEventHandler" msprop:Generator_TableClassName="StatDataTable" msprop:Generator_TableVarName="tableStat" msprop:Generator_RowDeletingName="StatRowDeleting" msprop:Generator_TablePropName="Stat">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_gen" msprop:Generator_UserColumnName="Date_gen" msprop:Generator_ColumnPropNameInRow="Date_gen" msprop:Generator_ColumnVarNameInTable="columnDate_gen" msprop:Generator_ColumnPropNameInTable="Date_genColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Archive" msprop:Generator_UserTableName="Archive" msprop:Generator_RowDeletedName="ArchiveRowDeleted" msprop:Generator_TableClassName="ArchiveDataTable" msprop:Generator_RowChangedName="ArchiveRowChanged" msprop:Generator_RowClassName="ArchiveRow" msprop:Generator_RowChangingName="ArchiveRowChanging" msprop:Generator_RowEvArgName="ArchiveRowChangeEvent" msprop:Generator_RowEvHandlerName="ArchiveRowChangeEventHandler" msprop:Generator_TablePropName="Archive" msprop:Generator_TableVarName="tableArchive" msprop:Generator_RowDeletingName="ArchiveRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CPCOD" msprop:Generator_UserColumnName="CPCOD" msprop:Generator_ColumnPropNameInRow="CPCOD" msprop:Generator_ColumnVarNameInTable="columnCPCOD" msprop:Generator_ColumnPropNameInTable="CPCODColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Nombre" msprop:Generator_UserColumnName="Nombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nbr_betail" msprop:Generator_UserColumnName="Nbr_betail" msprop:Generator_ColumnPropNameInRow="Nbr_betail" msprop:Generator_ColumnVarNameInTable="columnNbr_betail" msprop:Generator_ColumnPropNameInTable="Nbr_betailColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Serie" msprop:Generator_UserColumnName="Serie" msprop:Generator_ColumnPropNameInRow="Serie" msprop:Generator_ColumnVarNameInTable="columnSerie" msprop:Generator_ColumnPropNameInTable="SerieColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Date_gen" msprop:Generator_UserColumnName="Date_gen" msprop:Generator_ColumnPropNameInRow="Date_gen" msprop:Generator_ColumnVarNameInTable="columnDate_gen" msprop:Generator_ColumnPropNameInTable="Date_genColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Etat" msprop:Generator_UserColumnName="Etat" msprop:Generator_ColumnPropNameInRow="Etat" msprop:Generator_ColumnVarNameInTable="columnEtat" msprop:Generator_ColumnPropNameInTable="EtatColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
